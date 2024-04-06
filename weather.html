@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App Project Work</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html" class="active">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html">W5 Task</a></li>
+            <li><a href="weather.html">Project</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Weather Forecast App Project Work</h1>
+    </header>
+    <main id="task3">
+        <section id="section1">
+            <div class="card">
+                <div class="search">
+                    <input type="text" placeholder="Enter location (city or zip code)" spellcheck="false">
+                    <button><img src="images/search.png"></button>
+                </div>
+                <div class="error">
+                    <p>Invalid City Name</p>
+                </div>
+                <div class="weather">
+                    <img src="images/rain.png" class="weather-icon">
+                    <h1 class="temp">22°C</h1>
+                    <h2 class="city">New York</h2>
+                    <div class="details">
+                        <div class="col">
+                            <img src="images/humidity.png">
+                            <div class="text-container">
+                                <p class="humidity">50%</p>
+                                <p class="description">Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="images/wind.png">
+                            <div class="text-container">
+                                <p class="wind">15 km/h</p>
+                                <p class="description">Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Weather Forecast App Project Work
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>
