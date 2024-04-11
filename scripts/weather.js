@@ -74,3 +74,9 @@ document.querySelector("#multiplied").innerHTML = sourceArray.map(
 document.querySelector("#sumOfMultiplied").innerHTML = sourceArray
     .map((number) => number * 2)
     .reduce((accumulator, currentValue) => accumulator + currentValue);
+
+/* Additional Array Method */
+/* Output Squared Array */
+document.querySelector("#squared").innerHTML = sourceArray.map(
+    (number) => number ** 2
+);
